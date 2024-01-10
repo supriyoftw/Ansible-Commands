@@ -1,0 +1,46 @@
+7  ansible demo -b -m yum -a "pkg=httpd state=presnt"
+    8  clear
+    9  pwd
+   10  clear
+   11  ansible demo -b -m service -a "name=httpd state=started"
+   12  clear
+   13  ansible demo -b -m service -a "name=httpd state=stopped"
+   14  clear
+   15  ansible demo -b -m service -a "name=httpd state=absent"
+   16  clear
+   17  history
+   18  clearclear
+   19  clear
+   20  ansbile demo -b -m user -a "name=sak state=present"
+   21  clear
+   22  ansibile demo -b -m user -a "name=bittu  state=present"
+   23  clear
+   24  ansible   demo -b -m user -a "name=bittu  state=present"
+   25  clear
+   26  ansible demo -b -a "cat /etc/passwd"
+   27  clear
+   28  ansible demo -b -m user -a "name=bittu state=absent"
+   29  clear
+   30  ansible demo -b -m group -a "name=bittu state=absent"
+   31  clear
+   32  ansible dmeo -b -a "cat /etc/group"
+   33  clear
+   34  ansible demo -b -m group -a "name=devops state=absent"
+   35  clear
+   36  ansible demo -b -m file -a "path=/home/ansible/demo state=directory"
+   37  clear
+   38  ansible demo -b -m file -a "path=/home/ansible/demo state=absent"
+   39  clear
+   40  ansible demo -b -m file -a "path=/home/ansible/demo state=absent mode=0755"
+   41  clear
+   42  ansible demo =m file -a "path=/home/ansible/jsp.txt state=absent mode=0755"
+   43  clear
+   44  ansible demo -b -m file -a "path=/home/ansible/demo state=absent"
+   45  clear
+   46  ansible demo -m file -a "path=/home/ansible/jsp.txt state=touch"
+   47  clear
+   48  ansible demo -m file -a "path=/home/ansible/jsp.txt state=absent mode=0755"
+   49  clear
+   50  ansible demo -b -m copy -a "src=/home/ansible/file.txt dest=/home/ansible"
+   51  clear
+   52  history
